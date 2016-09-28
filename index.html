@@ -43,7 +43,7 @@
 		methods: {
 			send: function(e){
 				socket.emit('chat.message', this.message);
-
+				this.message = '';
 				e.preventDefault();
 			}
 		}
